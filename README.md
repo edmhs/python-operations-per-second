@@ -1,8 +1,11 @@
 # python-operations-per-second
+
 Simple operations per second counter class
 
+
 #### code
-~~~
+
+~~~python
 import time
 
 class OPS:
@@ -23,15 +26,19 @@ class OPS:
         print(self.seconds)
 ~~~
 
+
 #### Usage
-~~~
+
+~~~python
 o = OPS()
 
-while [do something]:
+# do something
+while i > 100:
     o.add()
-    //some activity
+    # some activity
 
+# when done print how fast activity was processing
 o.print()
-//prints {1544912424: 769, 1544912425: 2648, 1544912426: 2578, 1544912427: 2599, 1544912428: 1406}
+# prints {1544912424: 769, 1544912425: 2648, 1544912426: 2578, 1544912427: 2599, 1544912428: 1406}
 
 ~~~
